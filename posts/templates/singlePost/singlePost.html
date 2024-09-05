@@ -1,0 +1,32 @@
+{% include 'components/header.html' %}
+
+<div class="container mt-5">
+    <div class="card mb-3">
+        <div class="card-body">
+            <h4 class="card-title title-color">{{ data.title }}</h4>
+            <p class="card-text">{{ data.body }}</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h5 class="title-color">Comments:</h5>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-12 " id="comment_section">
+
+        </div>
+    </div>
+</div>
+{% include 'components/includeScripts.html' %}
+<script>
+    var post_id = {{ post_id }}
+</script>
+    {% load static %}
+
+<script src="{% static '/posts/js/comments.js' %}"></script>
+
+</body>
+</html>

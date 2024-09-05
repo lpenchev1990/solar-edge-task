@@ -1,0 +1,22 @@
+.logo-image {
+    width: 200px;
+}
+
+.title-color {
+    background-image: linear-gradient(90deg, rgb(235, 0, 44) 1%, rgb(255, 110, 30) 67%);
+    font-weight: bold;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.link-color {
+    color: #EC012D;
+}
+
+
+.link-color:hover {
+    color: rgb(255, 110, 30);
+}
+.comments-background {
+    background-color: rgba(238, 246, 255, 1);
+}

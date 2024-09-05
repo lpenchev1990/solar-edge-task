@@ -1,0 +1,15 @@
+{% include 'components/header.html' %}
+
+<div class="container mt-5">
+        {% for post in data %}
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title title-color">{{ post.title }}</h5>
+                    <p class="card-text">{{ post.body }}</p>
+                    <a href="post/{{ post.id }}" class="card-link link-color">Read post</a>
+                </div>
+            </div>
+        {% endfor %}
+</div>
+{% include 'components/footer.html' %}
+
