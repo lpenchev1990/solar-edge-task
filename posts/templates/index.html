@@ -6,14 +6,14 @@
                 <div class="card-body">
                     <h5 class="card-title title-color">{{ post.title }}</h5>
                     <p class="card-text">{{ post.body }}</p>
-                    <a href="post/{{ post.id }}" class="card-link link-color">Read post</a>
+                    <a href="{{ request.scheme }}://{{ request.get_host }}/post/{{ post.id }}" class="card-link link-color">Read post</a>
                 </div>
             </div>
         {% endfor %}
 <ul class="pagination">
 
         {% for page in pagination_pages %}
-             <li class="page-item"><a class="page-link {% if page == current_page %} current_page {% endif %} " href="/all_posts/{{ page }}">{{ page }}</a></li>
+             <li class="page-item"><a class="page-link {% if page == current_page %} current_page {% endif %} " href="{{ request.scheme }}://{{ request.get_host }}/all_posts/{{ page }}">{{ page }}</a></li>
         {% endfor %}
 
 </ul>

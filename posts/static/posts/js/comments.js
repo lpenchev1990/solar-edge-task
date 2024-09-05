@@ -19,7 +19,8 @@
             '<p>'+data.body+'</p>' +
             '<div class="d-flex justify-content-between">' +
             '<div class="d-flex flex-row align-items-center">' +
-            '<p class="small mb-0 ms-2">'+data.name+' ('+data.email+')</p>' +
+            '<div class="row"><div class="col-md-12"> '+data.name+'</div>'+
+            '<div  class="small mb-0 ms-2"> <div class="col-md-12 ml-3">'+data.email+'</div> </div></div>' +
             '</div>' +
             '</div>' +
             '</div>' +
