@@ -20,3 +20,7 @@
 .comments-background {
     background-color: rgba(238, 246, 255, 1);
 }
+
+.current_page{
+    color: rgb(255, 110, 30);
+}

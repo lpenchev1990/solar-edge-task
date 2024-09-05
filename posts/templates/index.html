@@ -10,6 +10,13 @@
                 </div>
             </div>
         {% endfor %}
+<ul class="pagination">
+
+        {% for page in pagination_pages %}
+             <li class="page-item"><a class="page-link {% if page == current_page %} current_page {% endif %} " href="/all_posts/{{ page }}">{{ page }}</a></li>
+        {% endfor %}
+
+</ul>
 </div>
 {% include 'components/footer.html' %}
 
