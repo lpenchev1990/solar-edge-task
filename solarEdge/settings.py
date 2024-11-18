@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'posts',
-    'api'
+    'api',
+    'mapSitemaps'
 ]
 
 MIDDLEWARE = [
@@ -81,8 +82,12 @@ WSGI_APPLICATION = 'solarEdge.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',  # MySQL бекенд
+        'NAME': 'detskiai',         # Име на базата данни
+        'USER': 'root',              # Потребителско име
+        'PASSWORD': '',          # Парола
+        'HOST': 'localhost',                  # Адрес на MySQL сървъра
+        'PORT': '3306',                       # Порт (по подразбиране 3306)
     }
 }
 
